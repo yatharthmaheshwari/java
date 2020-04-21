@@ -35,8 +35,36 @@ public class MultidimensionalArray {
        
        System.out.println(a.length);
        System.out.println(b.length);
+      
        
-		
+       
+	   for(int c = 0; c < cols; c++) {
+		   System.out.println("value for array 'a' column index" + "");
+		   for(int r = 0; r < rows ; r++) {
+			 System.out.println("value for Array 'a' row index" + r);
+			  a[r][c] = sc.nextInt(); 
+			  
+			  
+		  }
+	   } 
+      
+	   for(int c = 0; c < cols; c++) {
+		   System.out.println("value for array 'b' index"+ c);
+		   for(int r = 0; r < rows ; r++) {
+			   System.out.println("value for Array 'b' row index" + r);
+		       b[r][c] = sc.nextInt();
+			  
+		   }
+	    }
+	   
+       
+	   for(int c = 0; c < cols ; c++) {
+		   for(int r = 0; r < rows; r++) {
+			   System.out.println(a[r][c]);
+		   }
+	   }
+	   
+       
 	}
 	
 }
